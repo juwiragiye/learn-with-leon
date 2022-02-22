@@ -1,0 +1,115 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 10rem;
+}
+
+header > nav > * {
+  float: left;
+  width: 45%;
+}
+
+header > nav > ul {
+  width: 55%;
+}
+
+header > nav > ul > * {
+  float: left;
+  width: 10%;
+}
+
+
+
+main > ul > * {
+  float: left;
+}
+
+
+main + section {
+  float: right;
+  width: 65%;
+}
+
+
+main + section + section > ul > * {
+  float: left;
+  width: 20%;
+}
+main + section + section > section > * {
+  width: 25%;
+  float: left;
+}
+
+
+main + section + section  + section > section {
+  float: left;
+  width: 50%;
+
+}
+
+main + section + section  + section > section * {
+  float: left;
+  width: 100%;
+
+}
+
+main + section + section  + section > img{
+  float: left;
+
+}
+
+
+
+main + section + section  + section  + section > *{
+  float: left;
+  width: 100%;
+}
+
+main + section + section  + section  + section > img{
+  width: 10rem;
+  height: 10rem;
+}
+
+main + section + section  + section  + section > ul > *{
+  float: left;
+}
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

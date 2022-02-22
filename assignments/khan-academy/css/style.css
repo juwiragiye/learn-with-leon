@@ -1,0 +1,182 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 6rem;
+  border-bottom: 1px solid gray;
+}
+
+header > nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+ 
+}
+
+header > nav > section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+header > nav > section + section + section > ul{
+  gap: 1rem;
+  display: flex;
+}
+
+header + main  {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+
+}
+
+header + main > section  {
+
+ max-width: 50rem;
+ max-height: 50rem;
+ 
+}
+
+main > section > svg {
+  max-height: 100%;
+}
+main > section > h1 > span {
+  display: block;
+}
+
+main > section + section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+main > section > ul {
+  display: flex;
+  gap: 1rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(24, 101, 242);
+}
+
+::placeholder {
+  color:rgb(24, 101, 242);
+}
+
+header {
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+header > nav > section > a  {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  
+}
+
+header > nav > section > a > div {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: .3rem 0;
+ 
+}
+
+header > nav > section + section > a > svg {
+  color: rgb(10, 42, 102);
+  font-weight: 700;
+}
+
+header > nav > section > form {
+  position: relative;
+
+}
+
+header > nav > section > form > input {
+  background: rgb(240, 241, 242);
+  border: 2px solid white;
+  padding: 0.6rem;
+  min-width: 20rem;
+
+  
+}
+
+header > nav > section > form > span {
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  transform: translateY(-50%);
+  color: gray;
+}
+
+main > section > h1 {
+  color: rgb(33, 36, 44);
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+main > section > p {
+  color: rgb(33, 36, 44);
+  font-size: 1.8rem;
+}
+
+main > section > ul {
+ 
+  padding: 0;
+}
+
+main > section > ul > * {
+  padding: .9rem 1.5rem ;
+  background: rgb(24, 101, 242);
+  border-radius: 0.5rem;
+}
+
+main > section > ul > li > * {
+  font-size: 1.4rem;
+  color: white;
+}
+
