@@ -1,0 +1,41 @@
+body {
+  height: 100vh;
+  background: #000;
+  color: white;
+  text-align: center;
+}
+
+main {
+  width: 250px;
+  background: red;
+  border-radius: 25px;
+  padding: 120px 10px 10px 10px;
+  margin: 100px auto;
+}
+
+span {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 25px;
+  margin-right: 20px;
+  height: 50px;
+}
+
+#history {
+  font-size: 14px;
+}
+
+ul {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  grid-template-columns: repeat(4, 62px);
+}
+
+li {
+  margin: 2px;
+  height: 50px;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 50px;
+}
