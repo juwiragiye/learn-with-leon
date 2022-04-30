@@ -7,7 +7,7 @@ document.querySelector('button').addEventListener('click', anothaOne)
 
 function anothaOne(){
     let botScore = Number(localStorage.getItem('botScore'))
-    botScore = botScore + 1
+    botScore++
     localStorage.setItem('botScore', botScore)
 }
 
